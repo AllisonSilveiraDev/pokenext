@@ -1,13 +1,13 @@
-import Link from 'next/link'
+import Link from "next/link";
 
-import styles from '../../styles/Navbar.module.css'
+import styles from "../../styles/Navbar.module.css";
 
-import Image from 'next/image'
+import Image from "next/image";
 
 export default function Navbar() {
   return (
     <nav className={styles.navbar}>
-      <div>
+      <div className={styles.logo}>
         <Image
           src="/images/pokeball.png"
           width="30"
@@ -16,7 +16,7 @@ export default function Navbar() {
         />
         <h1>PokeNext</h1>
       </div>
-      <ul>
+      <ul className={styles.link_items}>
         <li>
           <Link href="/">
             <a>Home</a>
@@ -29,5 +29,5 @@ export default function Navbar() {
         </li>
       </ul>
     </nav>
-  )
+  );
 }
