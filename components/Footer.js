@@ -5,6 +5,7 @@ export default function Footer(options) {
     <footer className={styles.footer}>
       <p>
         <span>PokeNext</span> &copy; 2022
+        <code>{"{AllisonDev/}"}</code>
       </p>
     </footer>
   );
